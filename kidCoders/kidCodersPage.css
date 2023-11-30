@@ -2955,6 +2955,15 @@ a {
   margin-left: 12px;
   margin-right: 0;
 }
+
+.center-btn {
+  text-align: center;
+  margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.u-btn {
+  display: inline-block;
+}
 .u-form {
   --progress-spacing: 0;
   --bar-size: 0;
@@ -17581,15 +17590,17 @@ html {
 .u-body h3,
 .u-body h4,
 .u-body h5,
-.u-body h6 {
-  padding: 0;
+.u-body h6,
+.u-body h7 {
+  padding: 8;
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -17613,6 +17624,9 @@ h5 {
 }
 h6 {
   font-size: 1.125rem;
+}
+h7 {
+  font-size: 2.125rem;
 }
 p {
   margin-top: 0;
@@ -25152,7 +25166,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   font-family: Roboto,sans-serif;
 }
 /*end-variables font-family*/
@@ -41427,12 +41442,25 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h6
         {
-        font-weight: 400;
+        font-weight: 800;
         font-size: 1.125rem;
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
         }
+        h7 {
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 1.2;
+          margin-top: 20px;
+          margin-bottom: 200px;
+          text-align: center; /* Centraliza o texto horizontalmente */
+          display: block; /* Garante que o texto ocupe a largura máxima disponível */
+          padding-left: 600px; /* Adicione espaço à esquerda conforme necessário */
+          padding-right: 600px; /* Adicione espaço à direita conforme necessário */
+          padding-bottom: 20px; /* Adicione espaço à esquerda conforme necessário */
+        }
+      
         p.u-large-text
         {
         font-size: 1.5rem;
